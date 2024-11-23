@@ -1,9 +1,12 @@
-import CardShopContainer from '../componets/elements/CardShopContainer'
+import Main from '../componets/elements/Main'
+import Navbar from '../componets/elements/NavBar'
 
 function Home() {
   return (
     <>
-    <CardShopContainer/>
+    <Navbar/>
+    <Main/>
+    {/* <CardShopContainer/> */}
     </>
   )
 }

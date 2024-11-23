@@ -1,7 +1,10 @@
 const Women = () => {
     return (
         <>
-            <h1>ini women</h1>
+            <div style={{ textAlign: 'center', padding: '2rem' }}>
+                <h1>Halaman Perempuan</h1>
+                <p>Berisi koleksi khusus untuk perempuan.</p>
+            </div>
         </>
     );
 };
