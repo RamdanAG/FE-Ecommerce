@@ -7,6 +7,7 @@ nav {
   height: 5rem;
   background-color: #fff;
   position: relative;
+  z-index: 999999;
 }
 
 nav img {
@@ -25,15 +26,16 @@ nav img {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 3rem; /* Jarak antar item navbar */
+  gap: 1rem; /* Jarak antar item navbar */
 }
+
 .Listbar-nav-dekstop li {
   cursor: pointer;
+  padding: 1rem;
 }
 
 .Listbar-nav-dekstop li:hover {
-  color: #ed1d24;
+  color: #ff0008;
 }
 
 /* Mobile Navigation */
@@ -89,6 +91,14 @@ nav img {
   gap: 1.5rem;
 }
 
+.botton-login{
+  background-color: #ed1d24;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
 .icon-btn {
   background: none;
   border: none;
@@ -108,7 +118,7 @@ nav img {
 
 /* Menambah kan sebuah dropdown bahasa */
 .language-dropdown {
-  position: relative;
+  position: relative; 
 }
 
 .dropdown-menu {
@@ -138,6 +148,56 @@ nav img {
   color: #ed1d24;
 }
 
+/* Navbar Second Styling */
+.navSecond {
+  background: rgb(255, 251, 0);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navSecond .navSecond-Left {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navSecond .navSecond-Right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navSecond .navSecond-Right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navSecond .diskon {
+  border: none;
+  padding: 0.5rem 2rem;
+  background-color: rgb(233, 0, 0);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
@@ -154,6 +214,9 @@ nav img {
     font-size: 2rem;
   }
   .menu-normal{
+    display: none;
+  }
+  .navSecond{
     display: none;
   }
 }
